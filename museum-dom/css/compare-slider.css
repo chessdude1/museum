@@ -1,0 +1,75 @@
+.explore-img-wrapper {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  display: flex;
+  width: 720px;
+  height: auto;
+  margin: 0 0 0 2.78vw;
+  padding-top: 15px;
+}
+
+.explore-img {
+  z-index: 3;
+  position: relative;
+  top: 5px;
+
+  display: block;
+}
+
+.img-compare {
+  position: relative;
+  width: 720px;
+  height: 700px;
+}
+
+.img-before {
+  position: relative;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../assets/img/svg/compare-slider/after.jpg");
+}
+
+.img-after {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 60%;
+  height: 100%;
+
+  background: url("../assets/img/svg/compare-slider/before.jpg");
+}
+
+.img-compare-slider {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-appearance: none;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+}
+
+.img-compare-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  display: block;
+  width: 10px;
+  height: 100%;
+  cursor: ew-resize;
+}
+
+.img-compare-slider-img {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  left: 58.5%;
+}

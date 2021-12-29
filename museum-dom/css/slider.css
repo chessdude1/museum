@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.currentSlide {
+  font-family: "Roboto-Light";
+  line-height: 40px;
+  font-size: 22px;
+  letter-spacing: 10px;
+  padding-left: 75px;
+}
+.a {
+  width: 1000px;
+}
+.bullet {
+  height: 16px;
+  width: 16px;
+  background-color: #ffffff;
+}
+.bullet-active {
+  background-color: #d2b183;
+}
+.customize {
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #030303;
+  margin-left: 40%;
+  height: 120px;
+  align-items: center;
+}
+
+.currentSlide {
+  color: white;
+}
+
+.customize-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.customize-thumbnails {
+  display: flex;
+  gap: 25px;
+}

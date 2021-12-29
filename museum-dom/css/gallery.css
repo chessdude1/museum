@@ -1,0 +1,16 @@
+.slide-in {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(110%);
+}
+
+.active-gallery {
+  opacity: 1;
+  transition: all 0.5s;
+  /* animation-name: slidein; */
+  transform: translateY(0%);
+}
+
+/* .gallery_anim {
+  transform: translateY(110%);
+} */

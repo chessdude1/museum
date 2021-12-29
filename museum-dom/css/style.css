@@ -1,0 +1,2171 @@
+@font-face {
+  font-family: "Forum-Regular";
+  src: url("../assets/fonts/Forum-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/fonts/Roboto-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --black-color: #030303;
+  --white: #ffffff;
+  --red: #710707;
+  --grey: #c4c4c4;
+  --gold: #9d8665;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* head  */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--black-color);
+}
+
+header .container {
+  height: 150px;
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  justify-content: space-between;
+}
+.logo__image {
+  width: 49px;
+  height: 26px;
+}
+.logo {
+  display: flex;
+}
+.top-navigation {
+  padding-left: 30%;
+}
+
+.logo__text {
+  font-family: "Forum-Regular";
+  font-size: 28px;
+  letter-spacing: 5px;
+  line-height: 1;
+  vertical-align: bottom;
+}
+.top-navigation__nav-list {
+  display: flex;
+}
+
+.top-navigation__nav-item {
+  padding-left: 55px;
+  font-family: "Roboto-Thin";
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.logo__text {
+  padding-left: 25px;
+}
+
+/* welcome-louvre section */
+
+.welcome-louvre {
+  display: flex;
+  background-color: var(--black-color);
+  color: var(--white);
+  padding-bottom: 0px;
+}
+
+.greeting__head {
+  padding-top: 150px;
+  font-family: "Forum-Regular";
+  font-size: 80px;
+  letter-spacing: 5px;
+  line-height: 90px;
+}
+
+.greeting__description {
+  padding-top: 20px;
+  font-family: "Roboto-Light";
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+.greeting {
+  position: absolute;
+  z-index: 100;
+}
+.menu-burger {
+  display: none;
+}
+.burger-images {
+  display: none;
+}
+
+.burger-social-networks {
+  display: none;
+}
+
+.welcome-louvre__mona-liza {
+  position: relative;
+  width: 1000px;
+  margin-left: 440px;
+  margin-right: 220px;
+}
+
+.customize-thumbnails .tns-nav-active {
+  background-color: var(--gold);
+}
+
+.greeting__discover {
+  border-radius: 10px;
+  margin-top: 70px;
+  height: 75px;
+  width: 360px;
+  letter-spacing: 2px;
+  font-family: "Roboto-Light";
+  font-size: 22px;
+}
+.greeting__discover_red {
+  background-color: var(--red);
+}
+/* VIRTUAL TOUR */
+.virtual-tour {
+  padding-top: 55px;
+}
+.places {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 75px;
+}
+
+.title_text-decor {
+  font-family: "Forum-Regular";
+  font-size: 80px;
+  /* line-height: 90; */
+  letter-spacing: 5px;
+  /* width: 100%; */
+  padding-bottom: 15px;
+}
+.title_text-decor_gold-font {
+  color: var(--gold);
+}
+
+.title_text-decor_red-color {
+  border-bottom: 2px solid var(--red);
+}
+
+.places {
+  padding-top: 75px;
+}
+
+.places__caption {
+  font-family: "Forum-Regular";
+  font-size: 32px;
+  letter-spacing: 5px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--red);
+}
+
+.places__virtual-tour {
+  padding-top: 10px;
+  font-family: "Roboto-Thin";
+  font-size: 22px;
+}
+
+.places__google-view {
+  font-family: "Roboto-Thin";
+  font-size: 18px;
+}
+
+/* EXPLORE */
+
+.explore {
+  background-color: var(--black-color);
+}
+
+.explore .container {
+  padding-bottom: 75px;
+  padding-top: 75px;
+  margin-top: 75px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.title_text-decor_white-font {
+  padding-bottom: 30px;
+  vertical-align: top;
+  line-height: 1;
+  color: var(--white);
+}
+
+.picture-description__text {
+  padding-top: 25px;
+  color: var(--white);
+  font-family: "Roboto-Light";
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.text_top-paragraph {
+  padding-top: 75px;
+}
+
+.explore__picture {
+  margin-bottom: 10px;
+  padding-left: 60px;
+  width: 68%;
+  height: 700px;
+  object-fit: contain;
+}
+
+/* video section */
+
+.video {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.video__head {
+  display: flex;
+}
+
+.video__description {
+  padding-left: 115px;
+  padding-top: 20px;
+  font-family: "Roboto-Light";
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.video__poster {
+  padding-top: 40px;
+}
+
+.control-panel__play {
+  padding-left: 30px;
+}
+.slider_control {
+  height: 22px;
+}
+.control-panel {
+  display: flex;
+  background-color: var(--black-color);
+  height: 85px;
+  align-items: center;
+}
+
+.control-panel__progress {
+  margin-left: 50px;
+  background: linear-gradient(
+    to right,
+    var(--red) 0%,
+    var(--red) 40%,
+    var(--grey) 40%,
+    var(--grey) 100%
+  );
+  border: solid 2px var(--red);
+  border-radius: 8px;
+  height: 7px;
+  width: 930px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.control-panel__volume {
+  padding-left: 50px;
+}
+
+.control-panel__progress_volume {
+  width: 155px;
+}
+.control-panel__progress::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: var(--white);
+}
+
+.control-panel__full-screen {
+  padding-left: 50px;
+}
+.video-slider__videos {
+  width: 452;
+  height: 254;
+}
+.video-slider {
+  padding-top: 40px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 42px; */
+}
+
+.video-slider__control {
+  height: 12px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+/* gallery */
+.gallery__container {
+  /* padding-top: 75px; */
+  height: 2010px;
+  overflow-y: hidden;
+}
+.gallery {
+  padding-top: 75px;
+  background-color: var(--black-color);
+}
+
+.img-masonry {
+  gap: 24px;
+  height: 3000px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* tickets */
+
+.section-content {
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+
+.tickets-content {
+  margin-top: 70px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.tickets-content__buy-options {
+  margin-left: 60px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.tickets-content__type-heading {
+  font-family: "Roboto-Light";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.tickets-content__input-text {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-family: "Roboto-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.tickets-content__input-text .tickets-content__radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.video-slider__control {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullet_video {
+  border-radius: 20px;
+  height: 12px;
+  width: 12px;
+  margin-left: 20px;
+  background-color: #999999;
+}
+.prev_video {
+  order: 2;
+}
+.prev_video {
+  position: relative;
+  right: 180px;
+}
+
+.tns-nav-active {
+  background-color: #333333;
+}
+
+/* Create a custom radio button */
+.tickets-content__checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+/* When the radio button is checked, add a blue background */
+.tickets-content__input-text
+  .tickets-content__radio:checked
+  ~ .tickets-content__checkmark {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.tickets-content__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.tickets-content__input-text
+  .tickets-content__radio:checked
+  ~ .tickets-content__checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.tickets-content__input-text .tickets-content__checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+}
+.tickets-content__tickets-amount {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.tickets-content__amount-heading {
+  margin-bottom: 15px;
+  font-family: "Roboto-Light";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: end;
+}
+
+.tickets-content__btn-amount {
+  margin-top: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+}
+
+.tickets-content__number {
+  all: unset;
+  width: 3em;
+  text-align: center;
+  align-self: center;
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.tickets-content_image {
+  height: 550px;
+  width: 720px;
+  object-fit: cover;
+}
+.tickets-content__down-btn {
+  padding-top: 10px;
+}
+.tickets-content__age-ticket {
+  margin-bottom: 20px;
+  display: inline;
+  font-family: "Roboto-Light";
+  font-size: 22px;
+  margin: 10px 0 15px 0;
+}
+
+.tickets-content__total-price {
+  font-family: "Roboto-Light";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: end;
+  margin-top: 50px;
+}
+
+.tickets-content__btn-buy-now {
+  margin-top: 52px;
+  border-radius: 2px;
+  background-color: #000;
+  font-family: "Roboto-Light";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding: 12px 38px;
+}
+/* TEST FORM BUY */
+
+.form__header input {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.form__header-container {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: clamp(300px, 400px, 530px);
+  max-height: 145px;
+}
+
+.form-logo {
+  width: 85px;
+  height: 41px;
+  mask: url("../assets/img/svg/buyTicketsForm/logo.png") top left / cover;
+}
+
+.form__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: minmax(90px, auto);
+  column-gap: 15px;
+  margin: auto auto;
+  padding: 1px;
+  width: 970px;
+  height: 665px;
+  background-color: #ffffff;
+}
+
+.form__header *::placeholder {
+  padding-left: 10%;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--black-color);
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="time"],
+input[type="tel"] {
+  padding-left: 10px;
+}
+
+.form__book-subtitle {
+  position: relative;
+  margin: 15px 0 73px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--red);
+}
+
+.form__book-subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  background-color: var(--red);
+}
+
+.form__buy-tickets {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding: 30px 0 0 0;
+  width: clamp(300px, 400px, 530px);
+  border: none;
+}
+
+.form__book-title {
+  margin: 0;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.form__book-subtitle {
+  position: relative;
+  margin: 15px 0 73px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--red);
+}
+
+.form__book-subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  background-color: var(--red);
+}
+
+.form__buy-tickets {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding: 30px 0 0 0;
+  width: clamp(300px, 400px, 530px);
+  border: none;
+}
+
+#date {
+  grid-column: 1;
+  border-width: 2px;
+  border-color: rgb(118, 118, 118), rgb(133, 133, 133);
+  background: 4.9% 50% no-repeat
+      url("../assets/img/svg/buyTicketsForm/date.png"),
+    93% 50% no-repeat url("../assets/img/svg/buyTicketsForm/arrow.png");
+}
+
+input[type="date"]::before {
+  content: "Date";
+}
+
+input[type="date"].selected::before {
+  content: "";
+}
+
+input[type="date"]::before,
+input[type="time"]::before {
+  margin: 0 2px 0 20%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--black-color);
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field,
+::-webkit-datetime-edit-text {
+  /* color: #ffffff; */
+}
+
+.selected::-webkit-datetime-edit-month-field,
+.selected::-webkit-datetime-edit-day-field,
+.selected::-webkit-datetime-edit-year-field,
+.selected::-webkit-datetime-edit-text {
+  color: var(--black-color);
+}
+
+#date:focus::-webkit-datetime-edit-month-field,
+#date:active::-webkit-datetime-edit-month-field,
+#date:focus::-webkit-datetime-edit-day-field,
+#date:active::-webkit-datetime-edit-day-field,
+#date:focus::-webkit-datetime-edit-year-field,
+#date:active::-webkit-datetime-edit-year-field,
+#date:focus::-webkit-datetime-edit-text,
+#date:active::-webkit-datetime-edit-text {
+  color: var(--black-color);
+}
+
+#time {
+  grid-column: 2;
+  border-width: 2px;
+  border-color: rgb(118, 118, 118), rgb(133, 133, 133);
+  background: 4.7% 50% no-repeat
+      url("../assets/img/svg/buyTicketsForm/time.png"),
+    93% 50% no-repeat url("../assets/img/svg/buyTicketsForm/arrow.png");
+}
+
+input[type="time"]::before {
+  content: "Time";
+}
+
+#time::-webkit-datetime-edit-text,
+#time::-webkit-datetime-edit-hour-field,
+#time::-webkit-datetime-edit-minute-field {
+  /* color: #ffffff; */
+}
+
+#time.selected::-webkit-datetime-edit-text,
+#time.selected::-webkit-datetime-edit-hour-field,
+#time.selected::-webkit-datetime-edit-minute-field {
+  color: var(--black-color);
+}
+
+#time:focus::-webkit-datetime-edit-text,
+#time:active::-webkit-datetime-edit-text,
+#time:focus::-webkit-datetime-edit-hour-field,
+#time:active::-webkit-datetime-edit-hour-field,
+#time:focus::-webkit-datetime-edit-minute-field,
+#time:active::-webkit-datetime-edit-minute-field {
+  color: #000000;
+}
+
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+#date,
+#time {
+  grid-row: 1;
+  width: 190px;
+  height: 45px;
+  margin: 0 20px 20px 0;
+}
+
+#name {
+  grid-row: 2;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+
+#name::placeholder {
+  border-color: rgb(118, 118, 118), rgb(133, 133, 133);
+  background: 4% 50% no-repeat url("../assets/img/svg/buyTicketsForm/name.png");
+}
+
+#email {
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  grid-row: 3;
+}
+
+#email::placeholder {
+  background: 4% 50% no-repeat url("../assets/img/svg/buyTicketsForm/email.png");
+}
+
+#tel {
+  grid-row: 4;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+
+#tel::placeholder {
+  background: 4% 50% / contain no-repeat
+    url("../assets/img/svg/buyTicketsForm/tel.png");
+}
+
+#ticket-type {
+  grid-row: 5;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-left: 10%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid gray;
+  background: 4% 50% no-repeat
+      url("../assets/img/svg/buyTicketsForm/TicketsType.png"),
+    95% 50% no-repeat url("../assets/img/svg/buyTicketsForm/arrow.png");
+}
+
+#date:hover,
+#time:hover {
+  cursor: pointer;
+  background-color: var(--gold);
+  transition: 0.5s;
+}
+
+#ticket-type:hover,
+#ticket-type:active {
+  background-color: var(--white);
+}
+
+#ticket-type > option:hover {
+  outline-color: var(--gold) !important;
+}
+
+select option:hover {
+  color: #000;
+  box-shadow: inset 20px 20px #00f;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+#name,
+#email,
+#tel,
+#ticket-type {
+  grid-column: 1/3;
+  width: 400px;
+  height: 45px;
+  margin: 0 20px 20px 0;
+}
+
+.form-quantity-basic {
+  grid-column: 1/3;
+  grid-row: 7;
+}
+
+.form-quantity-senior {
+  grid-column: 1/3;
+  grid-row: 8;
+}
+
+.form-amount-subtitle {
+  margin: 0 0 22px 0;
+}
+
+.form-quantity-basic,
+.form-quantity-senior {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(320px, 370px, 530px);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: var(--black-color);
+}
+
+.form-buttons-wrapper {
+  display: flex;
+  width: clamp(110px, 115px, 180px);
+  max-height: 25px;
+  border: 1px solid gray;
+}
+
+.form-buttons-wrapper input {
+  width: 45px;
+  height: 25px;
+}
+.form__choose-number-tickets {
+  grid-column: 1/3;
+  grid-row: 6;
+  box-sizing: border-box;
+  width: clamp(320px, 400px, 530px);
+  max-height: 135px;
+  padding: 10px 15px 23px 15px;
+  border: 2px solid gray;
+}
+
+.choose-number-tickets_title {
+  position: relative;
+
+  margin: 0 0 20px 0;
+
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+
+  color: var(--gold);
+}
+
+.choose-number-tickets_title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background-color: var(--red);
+}
+
+.form-minus-btn,
+.form-plus-btn {
+  width: 35px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: var(--black-color);
+  color: var(--white);
+}
+
+.form__card_fields_pay {
+  grid-column: 3/4;
+  grid-row: 1/12;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+}
+
+.preview__wrapper {
+  grid-column: 3/4;
+  grid-row: 1/4;
+
+  display: flex;
+  justify-content: space-between;
+  width: clamp(320px, 470px, 530px);
+  max-height: 155px;
+  margin: 28px 30px 20px 30px;
+}
+
+.preview__title {
+  margin: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+
+  color: #272727;
+}
+
+.preview__subtitle {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--red);
+}
+
+.preview__date,
+.preview__time,
+.preview__type {
+  margin: 7px 0 0 0;
+  padding: 0 0 0 30px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: var(--black-color);
+}
+
+.preview__date {
+  background: 0 50% no-repeat url("../assets/img/svg/buyTicketsForm/date.png");
+}
+.preview__time {
+  background: 0 50% no-repeat url("../assets/img/svg/buyTicketsForm/time.png");
+}
+
+.preview__type {
+  background: 0 50% no-repeat url("assets/svg/form/check.svg");
+}
+.preview__amount-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px 330px;
+  align-items: center;
+  margin-bottom: 5px;
+  width: clamp(320px, 470px, 530px);
+  max-height: 115px;
+  margin: 0 30px 18px 30px;
+}
+
+.preview__amount-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #740c11;
+}
+
+.preview__amount-qty {
+  grid-column: 1;
+  width: 32px;
+  height: 21px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--black-color);
+  color: var(--white);
+}
+
+.preview__amount-text-basic,
+.preview__amount-text-senior,
+.preview__basic-qty,
+.preview__senior-qty {
+  margin: 7px 0 0 0;
+  padding: 0 0 0 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--black-color);
+}
+
+.preview__amount-text-basic {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.preview__amount-text-senior {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.preview__basic-qty {
+  grid-column: 3;
+  grid-row: 1;
+  margin-right: 15px;
+  text-align: center;
+}
+.preview__senior-qty {
+  grid-column: 3;
+  grid-row: 2;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.preview__total-number,
+.preview__total-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--black-color);
+}
+
+.preview__total-text {
+  grid-column: 1/2;
+  grid-row: 3;
+  margin-top: 15px;
+}
+
+.preview__total-number {
+  grid-column: 3;
+  grid-row: 3;
+  width: 115px;
+  margin: 15px 25px 0 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__card {
+  position: relative;
+  width: clamp(320px, 470px, 530px);
+  height: 240px;
+  margin: 0 30px 23px 30px;
+  background: left -15% / 78% no-repeat url("../assets/img/svg/buyTicketsForm/card1.png"),
+    top 90% left 100% no-repeat
+      url("../assets/img/svg/buyTicketsForm/card2.png");
+}
+
+.card_fields_number {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 213px;
+  height: 33px;
+  padding-left: 25px;
+  border: none;
+}
+
+.card_fields_month::placeholder,
+.card_fields_year::placeholder {
+  box-sizing: border-box;
+  padding-left: 5px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.card_fields_month {
+  position: relative;
+  top: 93px;
+  left: 20px;
+  width: 102px;
+  height: 36px;
+  padding-left: 15px;
+  border: none;
+}
+
+.card_fields_year {
+  position: absolute;
+  top: 93px;
+  left: 138px;
+  width: 102px;
+  height: 36px;
+  border: none;
+}
+
+.card_fields_month::-webkit-inner-spin-button,
+.card_fields_year::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  margin: 0;
+  padding: 0;
+  width: 55px;
+  height: 36px;
+  opacity: 1;
+}
+
+.cardholder-name {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  width: 325px;
+  height: 36px;
+  border: none;
+}
+
+.card_fields_cvv {
+  position: absolute;
+  top: 127px;
+  left: 370px;
+  width: 78px;
+  height: 36px;
+  border: none;
+}
+
+.form-submit-btn {
+  margin: 0 30px 0 26px;
+  padding: 0;
+  width: 220px;
+  height: 45px;
+  align-self: end;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  border: none;
+  background: var(--red);
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.form-submit-btn:hover {
+  background: var(--gold);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.error {
+  padding-top: 10px;
+  border: 2px solid rgb(255, 76, 91);
+}
+
+:invalid {
+  border: 2px solid rgb(255, 76, 91);
+}
+.number {
+  padding-left: 10px;
+}
+
+.allert {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-indent: 5px;
+  width: 100%;
+  color: rgb(255, 76, 91);
+}
+
+.menu_mobile {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  z-index: 999999999999999999;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: left 1s 1s;
+}
+
+.menu_mobile.active {
+  left: 0;
+  transition: left 1s;
+}
+.container_form {
+  margin: auto;
+}
+
+.close-menu {
+  transform: scale(0);
+  transition: transform 1s;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.close-menu-active {
+  transform: scale(1);
+  transition: transform 1s 1s;
+}
+
+/* TEST FORM BUY */
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+/* Buy Tickets */
+
+/* parallax */
+
+.parallax {
+  height: 400px;
+  width: 100%;
+}
+
+/* Contacts */
+
+.contacts {
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+
+.contacts__content {
+  display: flex;
+  padding-top: 65px;
+  justify-content: space-between;
+}
+.location-description {
+  padding-right: 20%;
+}
+.location-description__header {
+  font-family: "Roboto-Light";
+  font-weight: 600;
+  font-size: 28px;
+}
+.location-description__header p {
+  height: 38px;
+}
+/* .contacts__map_container {
+  margin-left: 1%;
+} */
+
+.location-description__contacts {
+  font-family: "Roboto-Light";
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+.location-description__contacts-text {
+  padding-top: 20px;
+}
+
+/* footer */
+.top-level {
+  padding-top: 85px;
+  display: grid;
+  grid-template-columns: 23.6% 17.9% 12.6% 46%;
+  padding-bottom: 50px;
+}
+.addit_nav_column {
+  font-family: "Roboto-Thin";
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.addit_nav_column {
+  display: grid;
+  row-gap: 17px;
+}
+.social-network {
+  padding-top: 75px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-network__item {
+  position: relative;
+  margin-left: 29px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #fff; /* White */
+}
+
+.social-network__image {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.social-network__image-twitter {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+}
+
+footer {
+  color: var(--white);
+  background-color: var(--black-color);
+}
+.bottom-level {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto-Thin";
+  font-size: 22px;
+  letter-spacing: 2px;
+  align-items: center;
+  height: 124px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ffd700;
+  color: var(--);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1445px) {
+  .welcome-louvre__mona-liza {
+    width: 55%;
+  }
+  .top-navigation {
+    padding-left: 0;
+  }
+}
+/* adaptive 1024*/
+
+@media (max-width: 1024px) {
+  .burger {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .burger span,
+  .burger span:before,
+  .burger span:after {
+    width: 32px;
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .burger span:before {
+    content: "";
+    top: -6px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .burger span {
+    top: 16px;
+  }
+  .burger span:after {
+    content: "";
+    bottom: -6px;
+    transition: bottom 300ms 300ms,
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .burger span.active:before {
+    content: "";
+    top: 0px;
+    transform: rotate(45deg);
+    transition: top 300ms,
+      transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .burger span.active:after {
+    content: "";
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms,
+      transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .burger span.active {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .menu-burger {
+    display: block;
+    width: 297px;
+    height: 585px;
+    background: var(--black-color);
+    z-index: 999999999999999999999999999999999999999999999;
+    color: #ccc;
+    padding: 10px;
+    position: fixed;
+    top: 129px;
+    left: -600px;
+    transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .menu-burger.animate {
+    left: 0;
+  }
+  .header-content__nav-item-desk {
+    display: flex;
+  }
+
+  .header-content__nav-item-desk_text-color a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Roboto-Light";
+  }
+  /* global */
+  .title {
+    font-size: 50px;
+  }
+  .container {
+    max-width: 984px;
+  }
+  /* header */
+  .top-navigation {
+    display: none;
+  }
+  .greeting__head {
+    padding-top: 40px;
+    font-size: 50px;
+  }
+  .greeting__description {
+    font-size: 24px;
+  }
+  .greeting__discover {
+    font-size: 20px;
+    margin-top: 50px;
+    height: 60px;
+    width: 300px;
+  }
+  .welcome-louvre__mona-liza {
+    width: 80%;
+    margin-left: 300px;
+    max-width: 70%;
+
+    height: 100%;
+  }
+  /* Virtual Tour */
+  .places__img {
+    width: 100%;
+    /* height: 215px; */
+  }
+  .places {
+    padding-top: 60px;
+    padding-left: 11%;
+    padding-right: 11%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 108px;
+    row-gap: 60px;
+  }
+
+  .places__caption {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  /* explore */
+
+  .explore .container {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+  }
+  .picture-description__text {
+    padding-top: 60px;
+    font-size: 20px;
+  }
+  .br__picture-description {
+    display: none;
+  }
+  .text_middle-paragraph {
+    padding-top: 0px;
+  }
+  .text_bottom-paragraph {
+    display: none;
+  }
+  .explore__picture {
+    margin: 0 auto;
+    display: block;
+    padding-left: 0px;
+    margin-top: 62px;
+    width: 100%;
+    height: 710px;
+  }
+  /* Video */
+  .video__description {
+    display: none;
+  }
+  .video__poster {
+    padding-top: 20px;
+  }
+  .control-panel {
+    height: 60px;
+  }
+  .control-panel__play {
+    width: 100px;
+    padding-left: 40px;
+  }
+  .control-panel__progress {
+    margin-left: 15px;
+    width: 100%;
+  }
+  .control-panel__volume {
+    /* width: 73%; */
+    padding-left: 25px;
+  }
+  .control-panel__progress_volume {
+    /* margin-left: 100px; */
+    width: 27%;
+  }
+  .control-panel__full-screen {
+    padding-right: 40px;
+  }
+  .video-slider {
+    padding-top: 30px;
+  }
+  .video-slider__videos {
+    height: 170px;
+    width: 300px;
+  }
+  /* Gallery */
+  .gallery__container {
+    height: 1290px;
+  }
+  .img-masonry {
+    height: 2100px;
+  }
+  .img-masonry img {
+    width: 304px;
+  }
+  /* Buy form */
+  .section-content {
+    padding-bottom: 60px;
+  }
+  .tickets-content__tickets-type {
+    display: none;
+  }
+  .tickets-content_image {
+    height: 440px;
+    width: 71%;
+  }
+
+  .tickets-content__btn-amount {
+    width: 175px;
+  }
+  .tickets-content__tickets-amount {
+    padding-left: 20px;
+    align-items: start;
+  }
+  .tickets-content__total-price {
+    letter-spacing: 1.65px;
+    margin-top: 25px;
+  }
+  .tickets-content__btn-buy-now {
+    margin-top: 75px;
+  }
+
+  /* parallax */
+  .parallax {
+    height: 400px;
+    object-fit: cover;
+  }
+  /* Contacts */
+  .contacts {
+    padding-top: 55px;
+  }
+  .contacts__map {
+    /* margin-left: 196; */
+    width: 70.5%;
+  }
+  .location-description__header {
+    font-size: 24px;
+  }
+  .location-description__contacts p {
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .top-level {
+    padding-top: 60px;
+    grid-template-columns: 23.6% 22% 8.8% 46%;
+  }
+}
+@media (max-width: 1000px) {
+  .welcome-louvre__mona-liza {
+    width: 60%;
+  }
+}
+/* adaptive 768*/
+
+@media (max-width: 768px) {
+  .burger-social-networks .social-network {
+    justify-content: center;
+    margin: 0 auto;
+    /* align-items: center; */
+  }
+  .burger-social-networks .social-network .social-network__item {
+    margin-left: 25px;
+  }
+  .menu-burger {
+    display: block;
+    width: 100vw;
+    height: 900px;
+    background: var(--black-color);
+    color: #ccc;
+    padding: 35px 55px;
+    position: fixed;
+    top: 129px;
+    left: -1000px;
+  }
+  .burger-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+  }
+
+  .burger-image-main {
+    grid-column: 1/3;
+  }
+
+  .burger-social-networks {
+    display: block;
+    margin-top: 35px;
+  }
+
+  .burger-social-networks .footer-social-networks {
+    justify-content: center;
+  }
+  /* global */
+  .container {
+    max-width: 728px;
+  }
+  /* header */
+  header .container {
+    height: 110px;
+  }
+  /* welcome louvre */
+  .welcome-louvre {
+    padding-bottom: 100px;
+  }
+  .welcome-louvre__mona-liza {
+    position: static;
+    width: 100%;
+    margin-left: 0px;
+    width: 728px;
+  }
+  .greeting {
+    position: static;
+    text-align: center;
+  }
+  .greeting__head {
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 0px;
+  }
+  .greeting__description {
+    font-size: 20px;
+  }
+  .greeting__discover {
+    display: none;
+  }
+  .welcome-louvre__mona-liza {
+    margin-top: 45px;
+    max-width: 100%;
+    height: 546px;
+  }
+  /* VIRTUAL TOUR */
+  .title {
+    font-size: 40px;
+  }
+  .virtual-tour {
+    padding-top: 40px;
+  }
+  .places {
+    padding-top: 30px;
+  }
+  img {
+    max-width: 1000%;
+  }
+
+  .places {
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    column-gap: 56px;
+    row-gap: 40px;
+  }
+  .places__caption {
+    font-size: 22px;
+  }
+  .places__virtual-tour {
+    /* padding-top: 20px; */
+    font-size: 18px;
+  }
+  .places__google-view {
+    font-size: 18px;
+  }
+
+  /* Explore */
+  .explore .container {
+    margin-top: 80px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+  }
+  .picture-description__text {
+    display: none;
+  }
+  .explore__picture {
+    margin-top: 50px;
+    height: 100%;
+  }
+  /* Video */
+  /* .control-panel {
+    order: 3;
+  } */
+  .video {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  .video__poster {
+    padding-top: 5px;
+  }
+  .control-panel__progress_volume {
+    display: none;
+  }
+  .control-panel__play {
+    order: -3;
+    padding-left: 30px;
+  }
+  .control-panel__volume {
+    order: -2;
+    padding-left: 10px;
+  }
+  .control-panel__progress {
+    margin-left: 40px;
+  }
+  .control-panel__full-screen {
+    /* margin-left: 70px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+  }
+  .videos_right {
+    display: none;
+  }
+  .video-slider {
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .video-slider__videos {
+    height: 200px;
+    width: 100%;
+  }
+  /* Gallery */
+  .gallery {
+    padding-top: 50px;
+  }
+  .gallery__container {
+    height: 1100px;
+  }
+  .img-masonry {
+    height: 3800px;
+  }
+  .img-masonry img {
+    width: 71%;
+  }
+  /* Tickets */
+  .tickets-content__buy-options {
+    width: 29%;
+  }
+  .section-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tickets-content_image {
+    padding-top: 0px;
+    /* width: 444px; */
+    width: 61%;
+    height: 340px;
+    object-fit: none;
+  }
+  .tickets-content {
+    margin-top: 40px;
+  }
+  .tickets-content__tickets-amount {
+    padding-left: 0px;
+  }
+  .tickets-content__down-btn {
+    padding-top: 20px;
+  }
+  .tickets-content__total-price {
+    margin-top: 35px;
+  }
+  /* .tickets-content {
+    width: 10%;
+  } */
+  .tickets-content__buy-options {
+    margin-left: 8%;
+    /* width: 20%; */
+  }
+
+  .tickets-content__btn-buy-now {
+    margin-top: 40px;
+  }
+  /* Parallax */
+  .parallax {
+    padding-top: 0px;
+    height: 300px;
+  }
+  /* CONTACTS */
+  .contacts {
+    padding-top: 45px;
+  }
+  .contacts__content {
+    padding-top: 40px;
+    display: block;
+  }
+  .location-description__header {
+    font-size: 20px;
+  }
+  .location-description__contacts p {
+    font-size: 18px;
+  }
+  .contacts__map {
+    margin-top: 40px;
+    width: 100%;
+  }
+  /* footer */
+  .top-level {
+    grid-template-columns: 41% 35% 11.5% 1%;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 20px;
+  }
+  .social-network__item {
+    margin-left: 0px;
+  }
+  .social-network {
+    padding-top: 48px;
+    grid-column: 2 / 4;
+    justify-content: space-between;
+  }
+  .addit_nav_column {
+    font-family: "Roboto-Thin";
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 560px) {
+  .tickets-content__buy-options {
+    margin-left: 1%;
+    /* width: 20%; */
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 380px;
+  }
+  header .container {
+    height: 80px;
+  }
+  .logo__image {
+    width: 29px;
+    height: 16px;
+  }
+  .logo__text {
+    font-size: 16px;
+  }
+  /* Welcome louvre */
+  .welcome-louvre {
+    padding-bottom: 80px;
+  }
+  .greeting__head {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .greeting {
+    padding-top: 10px;
+  }
+  .greeting__description {
+    font-size: 16px;
+  }
+  .welcome-louvre__mona-liza {
+    /* object-fit: cover; */
+    height: 285px;
+    margin-top: 50px;
+  }
+
+  /* VIRTUAL TOUR */
+  .title {
+    font-size: 28px;
+  }
+  .places__card {
+    align-content: center;
+  }
+  .places {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .places__img {
+    height: 180px;
+  }
+  .places__caption {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .places__virtual-tour {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+  .places__google-view {
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  /* Explore */
+  .explore .container {
+    margin-top: 25px;
+    padding-top: 45px;
+  }
+  /* VIDEO */
+  .video {
+    padding-bottom: 35px;
+  }
+  .control-panel {
+    height: 50px;
+  }
+  .control-panel__play {
+    padding-left: 20px;
+  }
+  .control-panel__play img {
+    height: 20px;
+  }
+  .control-panel__volume {
+    padding-left: 5px;
+  }
+  .control-panel__progress::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+  .control-panel__progress {
+    height: 5px;
+    margin-left: 30px;
+  }
+  .control-panel__full-screen {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .video-slider {
+    margin-top: 40px;
+    padding-top: 0px;
+  }
+  .video-slider__videos {
+    height: 101px;
+  }
+  /* Gallery */
+  .gallery {
+    padding-top: 45px;
+  }
+  .gallery__container {
+    height: 655px;
+  }
+  .img-masonry {
+    height: 2200px;
+  }
+  .img-masonry img {
+    width: 178px;
+  }
+  /* Buy Tickets */
+  .tickets-content__buy-options {
+    margin-left: 0px;
+  }
+  .tickets-content {
+    display: block;
+  }
+  .tickets-content_image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .tickets-content__tickets-amount {
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-left: 92%;
+  }
+  .tickets-content__tickets-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tickets-content__amount-heading {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .tickets-content__age-ticket {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .tickets-content__down-btn {
+    padding-top: 0px;
+  }
+  .age-ticket_senior {
+    padding-top: 20px;
+  }
+  .tickets-content__total-price {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .tickets-content__btn-buy-now {
+    margin-top: 35px;
+    font-size: 16px;
+    width: 100%;
+  }
+  /* Contacts */
+  .contacts {
+    padding-bottom: 45px;
+  }
+  .contacts__content {
+    padding-top: 35px;
+  }
+  .location-description__header {
+    font-size: 16px;
+  }
+  .location-description__contacts {
+    font-size: 16px;
+  }
+  .location-description__header p {
+    height: 32px;
+  }
+  /* footer */
+
+  .social-network {
+    padding-top: 10px;
+    grid-column: 1 / 5;
+    margin: 0 auto;
+  }
+  .social-network__item {
+    margin-left: 10px;
+  }
+  .top-level .logo {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: 10px;
+  }
+  .top-level {
+    padding-top: 45px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px 1fr 80px;
+    padding-bottom: 20px;
+  }
+  .bottom-level {
+    font-size: 16px;
+  }
+  .rolling_scopes {
+    display: none;
+  }
+}
